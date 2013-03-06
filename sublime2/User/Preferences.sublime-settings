@@ -2,6 +2,7 @@
 	"auto_complete_selector": "source - comment",
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -15,7 +16,26 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"ActionScript"
+		"ActionScript",
+		"C#",
+		"C++",
+		"Clojure",
+		"D",
+		"Graphviz",
+		"Erlang",
+		"Groovy",
+		"Go",
+		"Haskell",
+		"LaTeX",
+		"ASP",
+		"Lua",
+		"Lisp",
+		"Matlab",
+		"OCaml",
+		"Objective-C",
+		"R",
+		"Scala",
+		"TCL"
 	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
