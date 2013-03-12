@@ -9,3 +9,4 @@
 #   alias la='gls -A --color'
 # fi
 alias p8="ping 8.8.8.8"
+alias al="tail -f /var/log/apache/error.log"
