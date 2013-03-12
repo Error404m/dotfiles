@@ -2,13 +2,17 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"Awk",
 		"Backbone.js",
 		"BeautifyRuby",
 		"BracketHighlighter",
+		"CoffeeLint",
 		"CoffeeScript",
+		"DetectSyntax",
 		"DocBlockr",
 		"EditorConfig",
 		"EJS",
+		"Emmet",
 		"Git",
 		"Jasmine",
 		"jQuery Snippets pack",
