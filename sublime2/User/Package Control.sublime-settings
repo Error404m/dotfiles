@@ -14,8 +14,10 @@
 		"jQuery Snippets pack",
 		"Package Control",
 		"Pretty JSON",
+		"Quick File Creator",
 		"RSpec",
 		"SideBarEnhancements",
-		"SublimeLinter"
+		"SublimeLinter",
+		"yardoc"
 	]
 }
