@@ -9,37 +9,43 @@
 		".bundle",
 		".sass-cache",
 		".yardoc",
-		".git"
+		".git",
+		"node_modules",
+		"bundle",
+		"user_guide"
 	],
 	"font_size": 15.0,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"LaTeX",
-		"Scala",
-		"Vintage",
-		"Lua",
-		"Matlab",
-		"Erlang",
-		"ASP",
-		"C#",
-		"TCL",
-		"Emmet",
-		"Groovy",
-		"D",
-		"Lisp",
-		"C++",
-		"Objective-C",
 		"R",
 		"Clojure",
-		"OCaml",
-		"Graphviz",
-		"Haskell",
+		"C#",
+		"Go",
+		"Scala",
+		"Matlab",
 		"ActionScript",
-		"Go"
+		"Lua",
+		"Haskell",
+		"LaTeX",
+		"Groovy",
+		"OCaml",
+		"TCL",
+		"Objective-C",
+		"D",
+		"Lisp",
+		"ASP",
+		"C++",
+		"Erlang",
+		"Vintage",
+		"Graphviz"
+	],
+	"rulers":
+	[
+		80,
+		85
 	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"rulers": [80,85]
+	"trim_trailing_white_space_on_save": true
 }

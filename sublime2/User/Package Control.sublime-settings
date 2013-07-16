@@ -3,14 +3,17 @@
 	"installed_packages":
 	[
 		"Backbone.js",
+		"BeautifyRuby",
 		"BracketHighlighter",
+		"CoffeeScript",
 		"EditorConfig",
+		"Emmet",
 		"GitGutter",
 		"Jasmine",
+		"jQuery Snippets pack",
 		"Package Control",
 		"Pretty JSON",
 		"RSpec",
-		"SublimeLinter",
-		"yardoc"
+		"SublimeLinter"
 	]
 }
