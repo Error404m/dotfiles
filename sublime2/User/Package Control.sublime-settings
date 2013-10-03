@@ -2,18 +2,24 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"Backbone.js",
 		"BeautifyRuby",
 		"BracketHighlighter",
 		"CoffeeScript",
+		"Cucumber",
 		"EditorConfig",
 		"Emmet",
 		"GitGutter",
+		"HTML5",
 		"Jasmine",
 		"jQuery Snippets pack",
+		"LESS",
 		"Package Control",
 		"Pretty JSON",
 		"RSpec",
-		"SublimeLinter"
+		"Ruby 1.9 Hash Converter",
+		"SublimeLinter",
+		"Twitter Bootstrap Snippets"
 	]
 }
