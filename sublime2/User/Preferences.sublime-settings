@@ -3,6 +3,7 @@
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
 	"detect_slow_plugins": false,
+	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -12,33 +13,33 @@
 		".git",
 		"node_modules",
 		"bundle",
-		"user_guide"
+		"user_guide",
+		".idea"
 	],
-	"font_size": 15.0,
+	"font_size": 19.0,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Scala",
-		"C#",
-		"Matlab",
-		"Go",
-		"TCL",
-		"Graphviz",
-		"R",
-		"Objective-C",
-		"Lisp",
-		"Erlang",
-		"Vintage",
 		"Haskell",
-		"ActionScript",
+		"Objective-C",
+		"Matlab",
+		"TCL",
+		"Erlang",
+		"Go",
+		"ASP",
+		"Scala",
+		"Lisp",
 		"OCaml",
-		"D",
-		"C++",
+		"R",
 		"Lua",
+		"ActionScript",
 		"Clojure",
 		"LaTeX",
-		"ASP",
-		"Groovy"
+		"Groovy",
+		"D",
+		"Vintage",
+		"C#",
+		"Graphviz"
 	],
 	"rulers":
 	[
