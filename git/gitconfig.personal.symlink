@@ -1,0 +1,19 @@
+[color]
+	ui = true
+[user]
+	email = rsk@revathskumar.com
+	name = Revath S Kumar
+[core]
+	autocrlf = input
+	editor = vim
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  pr = !sh -c 'git fetch upstream pull/$0/head:$0-$1'
+  yday = !sh -c 'git shortlog --since=yesterday --author=rsk@revathskumar.com --no-merges'
+  promote = !$DOTFILES/bin/git-promote
+  wtf     = !$DOTFILES/bin/git-wtf
+  rank-contributers = !$DOTFILES/bin/git-rank-contributers
+  count   = !git shortlog -sn
+  today = !sh -c 'git shortlog --since=6am --author=rsk@revathskumar.com --no-merges'
+[pulley]
+	token = f57387775e007375b7fc6d36da7b3b7f13eb7c5c
