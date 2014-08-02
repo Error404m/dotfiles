@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+# ${1:Title of the Project}
+
+> ${2:description}
+
+[Live demo](http://revathskumar.github.io/${3:demo url})
+
+### Development
+
+* Clone the repo
+
+    `git clone git@github.com:revathskumar/${4:demo url}.git`
+
+* Install npm and bower dependencies
+
+    `npm install & bower install`
+
+* start grunt server
+
+    `grunt serve`
+
+### License
+
+[MIT License](http://revathskumar.mit-license.org/)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>readme</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
