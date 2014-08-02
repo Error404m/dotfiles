@@ -1,0 +1,4 @@
+# Mongo clean restart
+mc(){
+  sudo rm /var/lib/mongodb/mongod.lock &&  sudo service mongodb start
+}
