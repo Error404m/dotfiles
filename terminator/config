@@ -1,5 +1,5 @@
 [global_config]
-  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  enabled_plugins = CustomCommandsMenu, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler
   focus = mouse
 [keybindings]
 [profiles]
@@ -19,4 +19,96 @@
     [[[window0]]]
       type = Window
       parent = ""
+  [[myterm]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1920, 1055
+    [[[child1]]]
+      labels = None, None, None, None
+      type = Notebook
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 960
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[terminal13]]]
+      profile = default
+      type = Terminal
+      order = 3
+      parent = child1
+    [[[child5]]]
+      position = 513
+      type = VPaned
+      order = 1
+      parent = child1
+    [[[child6]]]
+      position = 960
+      type = HPaned
+      order = 0
+      parent = child5
+    [[[child10]]]
+      position = 960
+      type = HPaned
+      order = 2
+      parent = child1
+    [[[terminal11]]]
+      profile = default
+      command = ""
+      type = Terminal
+      order = 0
+      parent = child10
+    [[[terminal3]]]
+      profile = api
+      type = Terminal
+      order = 0
+      parent = child2
+    [[[terminal12]]]
+      profile = api
+      command = ""
+      type = Terminal
+      order = 1
+      parent = child10
+    [[[terminal4]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child2
+    [[[terminal7]]]
+      profile = default
+      type = Terminal
+      order = 0
+      parent = child6
+    [[[terminal9]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child5
+    [[[terminal8]]]
+      profile = default
+      type = Terminal
+      order = 1
+      parent = child6
+  [[Custom]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1360, 743
+    [[[terminal1]]]
+      profile = default
+      command = cd /home/revath/code/whatznear
+      type = Terminal
+      order = 0
+      parent = child0
 [plugins]
+  [[CustomCommandsMenu]]
+    [[[admin]]]
+      command = cd ~/code/
+      enabled = True
+      name = admin

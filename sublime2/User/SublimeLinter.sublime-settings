@@ -1,0 +1,11 @@
+{
+  "jshint_options": {
+    "browser": true,
+    "jquery": true,
+    "Twitter": true,
+    "$": true
+  },
+  "sublimelinter_executable_map":{
+    "ruby": "/home/revath/.rvm/bin/ruby-1.9.3-p0"
+  }
+}

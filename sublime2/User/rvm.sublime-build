@@ -1,0 +1,3 @@
+{
+  "cmd": ["/home/revath/.rvm/bin/rvm-auto-ruby", "$file"]
+}
