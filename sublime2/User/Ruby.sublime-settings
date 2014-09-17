@@ -1,5 +1,15 @@
 {
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true
+	"extensions":
+	[
+		"rabl",
+		"rake",
+		"thor",
+		"simplecov",
+		"podspec",
+		"jbuilder",
+		"rb"
+	],
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
