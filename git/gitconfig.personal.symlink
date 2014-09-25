@@ -17,3 +17,5 @@
   today = !sh -c 'git shortlog --since=6am --author=rsk@revathskumar.com --no-merges'
 [pulley]
 	token = f57387775e007375b7fc6d36da7b3b7f13eb7c5c
+[help]
+  autocorrect = 1
