@@ -26,3 +26,12 @@ alias grm="git status | grep deleted | awk '{print \$2}' | xargs git rm"
 gpr(){
   git fetch upstream pull/$1/head:$1-$2
 }
+
+# Git log for a particular date
+# @param date
+#       in format 2015-01-08
+# @param option
+#       any git log option mainly for --online
+gld(){
+  git log --after="$1 00:00" --before="$1 23:59" $2
+}
