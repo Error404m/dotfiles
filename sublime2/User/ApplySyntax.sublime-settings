@@ -10,6 +10,15 @@
 
     // Put your custom syntax rules here:
     "syntaxes": [
+        {
+            "name": "YAML/YAML",
+            "extensions": [".gemrc", "yml", "yml.dist", "yml.example"],
+            "rules": [
+                {"file_name": ".*\\.gemrc$"},
+                {"file_name": ".*\\.yml(\\.dist)?$"},
+                {"file_name": ".*\\.yml(\\.example)?$"}
+            ]
+        },
     ]
 }
 
