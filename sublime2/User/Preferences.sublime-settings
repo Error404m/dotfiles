@@ -1,4 +1,30 @@
 {
+	"added_words":
+	[
+		"capistrano",
+		"gitkeep",
+		"config",
+		"gitignore",
+		"localhost",
+		"php",
+		"Yii",
+		"www",
+		"sudoers",
+		"adduser",
+		"sudo",
+		"usergroup",
+		"chmod",
+		"chown",
+		"cli",
+		"app",
+		"addgroup",
+		"rvm",
+		"keyserver",
+		"gpg",
+		"namespace",
+		"init",
+		"desc"
+	],
 	"atomic_save": false,
 	"auto_complete_selector": "source - comment",
 	"bold_folder_labels": true,
@@ -21,27 +47,31 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"TCL",
-		"D",
-		"Objective-C",
-		"ASP",
-		"Yardoc",
-		"Lisp",
 		"Graphviz",
-		"C#",
+		"TCL",
 		"R",
-		"Vintage",
-		"Erlang",
-		"Clojure",
-		"Go",
 		"ActionScript",
-		"Lua",
-		"yardoc",
-		"Scala",
 		"Matlab",
-		"OCaml",
+		"Objective-C",
+		"Scala",
+		"Go",
+		"Vintage",
+		"Lisp",
+		"C#",
+		"yardoc",
+		"D",
+		"Lua",
+		"ASP",
 		"Groovy",
-		"LaTeX"
+		"LaTeX",
+		"Clojure",
+		"OCaml",
+		"Yardoc"
+	],
+	"ignored_words":
+	[
+		"access:copy",
+		"deploy:finishing"
 	],
 	"rulers":
 	[

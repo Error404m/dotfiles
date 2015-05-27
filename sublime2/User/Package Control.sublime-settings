@@ -1,5 +1,8 @@
 {
 	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"ApplySyntax",
@@ -7,29 +10,23 @@
 		"BeautifyRuby",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"CoffeeLint",
-		"CoffeeScript",
-		"Color Highlighter",
-		"Cucumber",
 		"EditorConfig",
 		"Emmet",
 		"GitGutter",
-		"Handlebars",
+		"Gutter Color",
 		"HTML5",
 		"Jade",
-		"Jasmine",
 		"JavaScript Patterns",
-		"jQuery Snippets pack",
+		"JSX",
 		"LESS",
 		"Package Control",
-		"PlainTasks",
-		"Pretty JSON",
-		"RSpec",
 		"Ruby Hash Converter",
 		"Ruby Slim",
 		"SCSS",
 		"SublimeLinter",
+		"SublimeLinter-jscs",
 		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
 		"Twitter Bootstrap Snippets",
 		"yardoc"
 	]
