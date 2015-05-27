@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+Yii::log('${1:this}' . CVarDumper::dumpAsString(${2:snippet}), CLogger::LEVEL_ERROR);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ylog</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+</snippet>
