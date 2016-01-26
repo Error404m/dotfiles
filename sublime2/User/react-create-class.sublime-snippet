@@ -1,0 +1,31 @@
+<snippet>
+  <content><![CDATA[
+var ${1:name} = React.createClass({
+  displayName : '${1:name}',
+  propTypes: {},
+  mixins : [],
+
+  getInitialState: function() {},
+  getDefaultProps: function() {},
+
+  componentWillMount : function() {},
+  componentWillReceiveProps: function() {},
+  componentWillUnmount : function() {},
+
+  _onSubmit : function() {},
+  _onClick : function() {},
+
+  render: function () {
+    return (
+      <div className="">
+
+      </div>
+    );
+  }
+});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>rclass</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>

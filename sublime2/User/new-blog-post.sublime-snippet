@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+---
+layout: post
+title: "${1:title}"
+excerpt: "${1:title}"
+date: ${2:date} 00:00:00 IST
+updated: ${2:date} 00:00:00 IST
+categories: ${3:category}
+tags: ${4:tags}
+---
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>npost</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.Markdown</scope> -->
+</snippet>
