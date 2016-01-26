@@ -1,0 +1,8 @@
+{
+    "path_mapping": {
+        "/var/www/" : "/home/revath/code/lookup/lookupadminv2"
+    },
+    "url": "http://lookup.dev/",
+    "port": 9009,
+    "super_globals": true
+}

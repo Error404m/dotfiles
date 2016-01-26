@@ -2,11 +2,11 @@
 	"extensions":
 	[
 		"jbuilder",
+		"rabl",
 		"simplecov",
 		"rb",
-		"podspec",
 		"thor",
-		"rabl",
+		"podspec",
 		"rake"
 	],
 	"tab_size": 2,
