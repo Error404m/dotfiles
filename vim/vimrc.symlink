@@ -25,6 +25,23 @@ set pastetoggle=<F2>
 " lead with ,
 let mapleader = ","
 
+" Split windows navigation
+nnoremap <C-J> <C-W><C-J> 
+nnoremap <C-K> <C-W><C-K> 
+nnoremap <C-L> <C-W><C-L> 
+nnoremap <C-L> <C-W><C-L> 
+nnoremap <C-H> <C-W><C-H> 
+
+" Remapping C-s requires flow control to be disabled in .bash/.zshrc
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+map <C-t> <esc>:tabnew<CR>
+
+" exit to normal mode with 'jj'
+inoremap jj <ESC>
+
+map <C-H> <C-W><C-H> 
+
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
 
@@ -76,6 +93,31 @@ set nohlsearch             " don't highlight searches
 set visualbell             " shut the fuck up
 
 
+"--------------------------------------------------------------------------
+"setting for filetypes
+"---------------------------------------------------------------------------
+
+augroup myfiletypes
+
+  autocmd!
+
+  autocmd FileType php setlocal ai sw=4 sts=4 et
+  autocmd FileType ruby setlocal ai sw=2 sts=2 et
+  autocmd FileType yaml setlocal ai sw=2 sts=2 et
+  
+  " Strip trailing space
+  autocmd BufWritePre *.php :%s/\s\+$//e
+augroup END
+
+
+" Ignore node_modules and vendor
+"
+"
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](node_modules|vendor)$',
+  \ }
+
+
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
@@ -84,3 +126,37 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-commentary'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'Townk/vim-autoclose'
+Plugin 'editorconfig/editorconfig-vim'
+
+" Snipmate and dependencies
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
