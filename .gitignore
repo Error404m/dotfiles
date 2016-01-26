@@ -2,3 +2,6 @@ sublime2/User/Package\ Control.sublime-settings
 vim/vim.symlink/.netrwhist
 *.last-run
 *.cache
+*ca-bundle
+*.log
+*.tmTheme
