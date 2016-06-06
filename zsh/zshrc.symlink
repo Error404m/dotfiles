@@ -29,7 +29,11 @@
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm node git yeoman bundler history-substring-search)
+plugins=(git history-substring-search bundler)
+
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
 
 # source $ZSH/oh-my-zsh.sh
 
@@ -42,10 +46,27 @@ export PROJECTS=~/code
 # source every .zsh file in this rep
 for config_file ($DOTFILES/**/*.zsh); do
   if [ -f $config_file ]; then
-    source $config_file
+    #source $config_file
   fi
 done
 unset config_file
+
+source $DOTFILES/git/aliases.zsh
+source $DOTFILES/git/completion.zsh
+source $DOTFILES/redis/aliases.zsh
+source $DOTFILES/ruby/aliases.zsh
+source $DOTFILES/system/aliases.zsh
+source $DOTFILES/system/env.zsh
+source $DOTFILES/system/keys.zsh
+source $DOTFILES/system/path.zsh
+source $DOTFILES/zsh/aliases.zsh
+source $DOTFILES/zsh/completion.zsh
+source $DOTFILES/zsh/config.zsh
+#source $DOTFILES/zsh/fpath.zsh
+#source $DOTFILES/zsh/prompt.zsh
+source $DOTFILES/zsh/z.zsh
+
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
@@ -66,9 +87,6 @@ ZSH_THEME="rsk"
 
 source $ZSH/oh-my-zsh.sh
 
-#source /home/revath/.phpbrew/bashrc
-#export PHPBREW_SET_PROMPT=1
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
@@ -78,22 +96,24 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/usr/lib/postgresql/9.2/bin:$PATH"
+# export PATH="/usr/local/heroku/bin:$PATH"
+# export PATH="/usr/lib/postgresql/9.2/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.composer/vendor/bin:$PATH"
+# export PATH="$HOME/.composer/vendor/bin:$PATH"
 export LC_ALL="en_US.UTF-8"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/revath/google-cloud-sdk/path.zsh.inc'
+# source '/home/revath/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/home/revath/google-cloud-sdk/completion.zsh.inc'
+# source '/home/revath/google-cloud-sdk/completion.zsh.inc'
+
+export RBKIT_DEV=true
 
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
