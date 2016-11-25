@@ -117,3 +117,6 @@ export RBKIT_DEV=true
 
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+
+# added by travis gem
+[ -f /home/revath/.travis/travis.sh ] && source /home/revath/.travis/travis.sh
