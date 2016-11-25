@@ -119,4 +119,9 @@ PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
 # added by travis gem
-[ -f /home/revath/.travis/travis.sh ] && source /home/revath/.travis/travis.sh
+if [[ -a /home/revath/ ]]
+then
+  [ -f /home/revath/.travis/travis.sh ] && source /home/revath/.travis/travis.sh
+else
+  [ -f /Users/revathskumar/.travis/travis.sh ] && source /Users/revathskumar/.travis/travis.sh
+fi
