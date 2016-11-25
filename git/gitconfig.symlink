@@ -15,6 +15,7 @@
         wtf     = !$DOTFILES/bin/git-wtf
         rank-contributers = !$DOTFILES/bin/git-rank-contributers
         count   = !git shortlog -sn
+        ignored = !git ls-files -v | grep "^[[:lower:]]"
 [color]
         diff = auto
         status = auto
