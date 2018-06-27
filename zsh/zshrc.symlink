@@ -51,7 +51,6 @@ for config_file ($DOTFILES/**/*.zsh); do
 done
 unset config_file
 
-source $DOTFILES/git/aliases.zsh
 source $DOTFILES/git/completion.zsh
 source $DOTFILES/redis/aliases.zsh
 source $DOTFILES/ruby/aliases.zsh
@@ -87,6 +86,7 @@ ZSH_THEME="rsk"
 
 source $ZSH/oh-my-zsh.sh
 
+source $DOTFILES/git/aliases.zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
