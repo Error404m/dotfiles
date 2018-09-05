@@ -34,3 +34,7 @@
 	required = true
 [commit]
 	gpgSign = true
+[cinnabar]
+	helper = /home/revath/code/git-cinnabar/git-cinnabar-helper
+[pager]
+	branch = false
