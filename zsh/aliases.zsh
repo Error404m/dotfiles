@@ -9,6 +9,8 @@ alias rm='trash'
 alias p8="ping 8.8.8.8"
 alias ack=ack-grep
 alias clrh="echo > ~/.local/share/recently-used.xbel"
+alias ci="code-insiders"
+alias cat="bat"
 
 alias nis="npm i --save"
 alias nisp="npm i --save --progress=false"
