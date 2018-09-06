@@ -1,7 +1,0 @@
-[
-  {"keys": ["ctrl+shift+i"], "command": "reindent" , "args": {"single_line": true}},
-  {"keys": ["ctrl+k"], "command": "toggle_side_bar" },
-  {"keys": ["ctrl+shift+u"], "command": "" },
-  {"keys": ["ctrl+alt+up"], "command": "select_lines", "args": {"forward": false} },
-  {"keys": ["ctrl+alt+down"], "command": "select_lines", "args": {"forward": true} }
-]
