@@ -178,6 +178,8 @@ bindsym $mod+Tab exec rofi -show window
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id synapse -s
+exec --no-startup-id "~/bin/greenclip daemon"
+exec --no-startup-id dropbox start -i
 
 #bindsym Print exec "scrot -e 'mv $f ~/Pictures/screenshots'"
 #bindsym $mod+Print exec "scrot -ue 'mv $f ~/Pictures/screenshots'"\
@@ -186,6 +188,7 @@ bindsym --release  Ctrl+Print    exec    gnome-screenshot -a
 bindsym --release Alt+Print exec gnome-screenshot -c -a
 
 bindsym $mod+Ctrl+l exec i3lock-fancy
+bindsym $mod+Shift+n exec --no-startup-id nautilus --new-window --no-desktop 
 
 #set $Locker i3lock && sleep 1
 set $mode_system Exit | (l)ock | (h)ibernate | (s)uspend | (r)estart | shut(d)own
