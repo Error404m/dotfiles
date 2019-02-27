@@ -52,12 +52,12 @@ done
 unset config_file
 
 source $DOTFILES/git/completion.zsh
-source $DOTFILES/redis/aliases.zsh
+#source $DOTFILES/redis/aliases.zsh
 source $DOTFILES/ruby/aliases.zsh
 source $DOTFILES/system/aliases.zsh
 source $DOTFILES/system/env.zsh
 source $DOTFILES/system/keys.zsh
-source $DOTFILES/system/path.zsh
+#source $DOTFILES/system/path.zsh
 source $DOTFILES/zsh/aliases.zsh
 source $DOTFILES/zsh/completion.zsh
 source $DOTFILES/zsh/config.zsh
@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES/git/aliases.zsh
 export NVM_DIR="$HOME/.nvm"
 export PATH="$NVM_DIR:$PATH"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
 #eval "$(gulp --completion=zsh)"
 
@@ -97,14 +97,14 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
 #export PATH="/usr/lib/postgresql/9.2/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 # export PATH="$HOME/.composer/vendor/bin:$PATH"
 export LC_ALL="en_US.UTF-8"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 
@@ -114,21 +114,33 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # The next line enables shell command completion for gcloud.
 # source '/home/revath/google-cloud-sdk/completion.zsh.inc'
 
-export PATH="$HOME/.exenv/bin:$PATH"
+#export PATH="$HOME/.exenv/bin:$PATH"
 #eval "$(exenv init -)"
 
 #export RBKIT_DEV=true
-export PATH="$HOME/code/git-cinnabar/:$PATH"
+#export PATH="$HOME/code/git-cinnabar/:$PATH"
 #source /home/revath/.cargo/env
 
 PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
-#[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
 
 # added by travis gem
-if [[ -a /home/revath/ ]]
-then
-  [ -f /home/revath/.travis/travis.sh ] && source /home/revath/.travis/travis.sh
-else
-  [ -f /Users/revathskumar/.travis/travis.sh ] && source /Users/revathskumar/.travis/travis.sh
-fi
+#if [[ -a /home/revath/ ]]
+#then
+#  [ -f /home/revath/.travis/travis.sh ] && source /home/revath/.travis/travis.sh
+#else
+#  [ -f /Users/revathskumar/.travis/travis.sh ] && source /Users/revathskumar/.travis/travis.sh
+#fi
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+#[[ -f /home/revath/code/mancers/diffity-lambda/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/revath/code/mancers/diffity-lambda/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+#[[ -f /home/revath/code/mancers/diffity-lambda/node_modules/tabtab/.completions/sls.zsh ]] && . /home/revath/code/mancers/diffity-lambda/node_modules/tabtab/.completions/sls.zsh
+# The next line updates PATH for the Google Cloud SDK.
+#if [ -f '/home/revath/google-cloud-sdk/path.zsh.inc' ]; then . '/home/revath/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+#if [ -f '/home/revath/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/revath/google-cloud-sdk/completion.zsh.inc'; fi
