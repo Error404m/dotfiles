@@ -166,12 +166,15 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+# sudo apt install i3status
 bar {
         status_command i3status
 }
 
+bindsym $mod+c exec zenity --calendar 
 bindsym $mod+n exec --no-startup-id ~/bin/empty_workspace.sh
 bindsym $mod+b exec --no-startup-id ~/bin/rofi-clipboard-paste.sh
+bindsym $mod+Alt+e exec --no-startup-id ~/bin/rofimoji.py
 bindsym $mod+Shift+f exec --no-startup-id ~/bin/rofi-totp
 bindsym $mod+Tab exec rofi -show window
 
@@ -180,6 +183,8 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id synapse -s
 exec --no-startup-id "~/bin/greenclip daemon"
 exec --no-startup-id dropbox start -i
+exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id emojione-picker
 
 #bindsym Print exec "scrot -e 'mv $f ~/Pictures/screenshots'"
 #bindsym $mod+Print exec "scrot -ue 'mv $f ~/Pictures/screenshots'"\
@@ -207,4 +212,9 @@ mode "$mode_system" {
 }
 bindsym $mod+x mode "$mode_system"
 
+# sudo apt install xautolock
 exec xautolock -time 5 -locker i3lock-fancy
+
+bindsym Ctrl+Shift+Up  exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym Ctrl+Shift+Down exec pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym Ctrl+Shift+M exec pactl set-sink-mute 0 toggle # mute sound
